@@ -32,4 +32,4 @@ def eight_ball(n):
 if __name__ == '__main__':
     asking = True
     while asking:
-        print(eight_ball(input("Ask the Magic 8 Ball the question on your mind or enter X to exit:")))
+        print(eight_ball(input("Ask the Magic 8 Ball the question on your mind or enter X to exit: ")))
