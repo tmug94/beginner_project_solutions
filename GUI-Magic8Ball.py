@@ -2,11 +2,12 @@
 # Author: Twazanga Mugala
 # Purpose: Simulate a magic 8-ball w/ GUI
 
-# Requirements: Take in user input, display in progress message, allow user to keep asking questions or quit.
+# Requirements: Take in user input, display in progress message, allow user to keep asking questions or quit. Add GUI
 
 import time
 import random
 from tkinter import *
+
 
 # List of answers
 answers = ["Definitely", "I'm not sure try again in 5 seconds", "No", "I don't know, I'm not psychic",
@@ -21,19 +22,7 @@ phrases = ["Hold on, I'm thinking...", "Thinking...", "Discussing with the ances
            "Calling Alex Trebek...", "Looking that up..."]
 
 
-
-# Function that picks random phrase and answer
-# def eight_ball(n):
-#    if n.lower() == "x":
-#        exit()
-#    print(phrases[p_num])
-#    time.sleep(4)
-#    answer = answers[a_num]
-#    return answer
-
-
 # Clear entrybox
-
 def clear():
     entrybox.delete(0, END)
     output.delete(0.0, END)
@@ -111,6 +100,3 @@ if __name__ == '__main__':
 
 
     window.mainloop()
-    #asking = True
-   # while asking:
-        #print(eight_ball(input("Ask the Magic 8 Ball the question on your mind or enter X to exit: ")))
