@@ -24,10 +24,11 @@ phrases = ["Hold on, I'm thinking...", "Thinking...", "Discussing with the ances
 
 # Clear entrybox
 def clear():
+    entrybox.configure(state=NORMAL)
     entrybox.delete(0, END)
     output.delete(0.0, END)
     ask.configure(state=NORMAL)
-    playagain.configure (state=DISABLED)
+    playagain.configure(state=DISABLED)
 
 
 
@@ -72,7 +73,7 @@ if __name__ == '__main__':
 
 
     # Create entry box to type question
-    entrybox = Entry(window, width=30, bg="white")
+    entrybox = Entry(window, width=50, bg="white")
     entrybox.grid(row=1, column=0)
 
 
